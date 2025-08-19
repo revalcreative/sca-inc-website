@@ -124,7 +124,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234299e1" width="1200" height="600"/><path fill="%23ffffff" opacity="0.1" d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600.png?text=Hero+Image');
+            /* TODO: Replace placeholder URL above with actual hero image file */
             background-size: cover;
             background-position: center;
             color: white;
@@ -221,11 +222,13 @@
             background: #cbd5e0;
             border-radius: 50%;
             margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            color: #a0aec0;
+            overflow: hidden;
+        }
+
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .team-member h4 {
@@ -273,13 +276,14 @@
         .service-image {
             width: 100%;
             height: 250px;
-            background: #e2e8f0;
             border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #a0aec0;
-            font-size: 48px;
+            overflow: hidden;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Benefits List */
@@ -537,6 +541,7 @@
     <div id="home" class="page active">
         <!-- Hero Section -->
         <section class="hero">
+            <!-- TODO: Provide hero image by updating .hero background URL in the CSS above -->
             <div class="container">
                 <h1>A THIRD PARTY ADMINISTRATOR FOR PREVAILING WAGE BENEFIT PLANS</h1>
                 <p>SUPPLEMENTAL UNEMPLOYMENT PLANS THAT SUPPORT YOUR WORKFORCE AND YOUR BOTTOM LINE</p>
@@ -566,10 +571,16 @@
                         <p>Employers that provide the PWCA SUB Plan to their employees eliminate the additional payroll tax burden of paying fringe dollars in cash.</p>
                         <a href="#" class="cta-btn">LEARN MORE</a>
                     </div>
-                    <div class="service-image">👥</div>
+                    <div class="service-image">
+                        <img src="https://via.placeholder.com/400x250.png?text=SUB+Plan+Image" alt="Placeholder image for SUB Plan">
+                        <!-- TODO: Replace with image illustrating the SUB Plan -->
+                    </div>
                 </div>
                 <div class="services-grid" style="margin-top: 60px;">
-                    <div class="service-image">👩‍💼</div>
+                    <div class="service-image">
+                        <img src="https://via.placeholder.com/400x250.png?text=Benefits+Image" alt="Placeholder image for additional benefits">
+                        <!-- TODO: Replace with image representing additional fringe benefits -->
+                    </div>
                     <div class="service-item">
                         <h4>ADDITIONAL FRINGE BENEFITS</h4>
                         <p>Through our nationwide network of Brokers, Agencies, and Plan Providers, SCA, Inc. can help you find the right Health Insurance, Retirement Plan, Hour Banking Program or other fringe benefit plan that meets your specific needs.</p>
@@ -599,17 +610,26 @@
                 
                 <div class="team-grid">
                     <div class="team-member">
-                        <div class="team-avatar">👤</div>
+                        <div class="team-avatar">
+                            <img src="https://via.placeholder.com/120.png?text=Photo" alt="Placeholder photo of Jeremiah Renner">
+                            <!-- TODO: Replace with photo of Jeremiah Renner -->
+                        </div>
                         <h4>Jeremiah Renner, President</h4>
                         <p>Jeremiah has been with Service Contract Administrators since 2010. Prior to joining SCA, he specialized in building, servicing and marketing employee benefit plans for some of the largest benefit plan providers in the country, including Principal Financial Group, Voya (formerly ING), and Humana. Prior to entering the benefit industry, Jeremiah is a graduate of The Ohio State University's Fisher College of Business. He lives in Upper Arlington, Ohio with his wife and twins.</p>
                     </div>
                     <div class="team-member">
-                        <div class="team-avatar">👤</div>
+                        <div class="team-avatar">
+                            <img src="https://via.placeholder.com/120.png?text=Photo" alt="Placeholder photo of Brad Arnold">
+                            <!-- TODO: Replace with photo of Brad Arnold -->
+                        </div>
                         <h4>Brad Arnold, Vice President</h4>
                         <p>Brad is a graduate of The Ohio State University with a degree in Personal Financial Planning. He joined SCA in 2012 and was promoted to Vice President in 2014. His management experience includes work in multiple industries, as well as his time as a sergeant in the US Army. Brad is also responsible for the online experience for both companies and brokers. He lives with his wife and two daughters in Westerville, Ohio.</p>
                     </div>
                     <div class="team-member">
-                        <div class="team-avatar">👤</div>
+                        <div class="team-avatar">
+                            <img src="https://via.placeholder.com/120.png?text=Photo" alt="Placeholder photo of Ryan West">
+                            <!-- TODO: Replace with photo of Ryan West -->
+                        </div>
                         <h4>Ryan West, Account Executive</h4>
                         <p>Prior to joining Service Contract Administrators in 2016, Ryan worked with several Fortune 500 companies, as well as the University of California System. His management experience focuses on services, customer experience, human resources, and project management. Ryan graduated from The Ohio State University's Fisher College of Business. He lives in Worthington, Ohio with his wife and two daughters.</p>
                     </div>
@@ -621,7 +641,8 @@
 
     <!-- Sub Plans Page -->
     <div id="sub-plans" class="page">
-        <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23e2e8f0\" width=\"1200\" height=\"600\"/><path fill=\"%23ffffff\" opacity=\"0.3\" d=\"M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z\"/></svg>'); margin-top: 140px;">
+        <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600.png?text=SUB+Plan+Hero'); margin-top: 140px;">
+            <!-- TODO: Replace placeholder URL above with hero image for SUB Plans page -->
             <div class="container">
                 <h1>PWCA SUPPLEMENTAL UNEMPLOYMENT BENEFIT PLAN</h1>
                 <p>HELPING YOU SUPPORT YOUR WORKFORCE — EVEN BETWEEN PROJECTS<br>FRINGE BENEFIT DOLLARS USED WISELY. TRUSTED BY EMPLOYERS NATIONWIDE.</p>
@@ -664,7 +685,10 @@
                             <li>Eligible employees receive weekly benefit payments tax-free.</li>
                         </ol>
                     </div>
-                    <div class="team-avatar" style="width: 200px; height: 200px; font-size: 80px;">👤</div>
+                    <div class="team-avatar" style="width: 200px; height: 200px;">
+                        <img src="https://via.placeholder.com/200.png?text=Icon" alt="Placeholder icon for process">
+                        <!-- TODO: Replace with illustration showing how the SUB Plan works -->
+                    </div>
                 </div>
                 
                 <a href="#" class="cta-btn">ABOUT US</a>
@@ -691,7 +715,8 @@
 
     <!-- Additional Benefits Page -->
     <div id="additional-benefits" class="page">
-        <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23e2e8f0\" width=\"1200\" height=\"600\"/><path fill=\"%23ffffff\" opacity=\"0.3\" d=\"M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z\"/></svg>'); margin-top: 140px;">
+        <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600.png?text=Additional+Benefits+Hero'); margin-top: 140px;">
+            <!-- TODO: Replace placeholder URL above with hero image for Additional Benefits page -->
             <div class="container">
                 <h1>ADDITIONAL BENEFITS</h1>
                 <p>SUPPORTING YOUR WORKFORCE WITH HEALTH, RETIREMENT<br>BENEFITS, AND MORE</p>
